@@ -8,4 +8,3 @@ for _ in range(t):
         for j in range(1, n):
             f0[j] += f0[j-1]
     print(f0[-1])
-        
