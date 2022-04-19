@@ -1,25 +1,21 @@
 num = []
 
 for i in range(2, 246913):
-    cnt = 0
-
-    for p in range(2, int(i**0.5)+1):
-        if i % p == 0:
-            cnt += 1
+    not_sosu = 0
+    for j in range(2, int(i**0.5)+1):
+        if i%j == 0:
+            not_sosu+=1
             break
-
-    if cnt == 0:
+    if not_sosu == 0:
         num.append(i)
-
+        
 while True:
     n = int(input())
-    res = 0
-
     if n == 0:
         break
-
+    sosu = 0
+    
     for i in num:
         if n < i <= 2*n:
-            res += 1
-
-    print(res)
+            sosu+=1
+    print(sosu)
