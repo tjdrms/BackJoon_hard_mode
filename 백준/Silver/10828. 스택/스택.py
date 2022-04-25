@@ -18,16 +18,16 @@ for _ in range(n):
         else:
             print(stack.pop())
             
-    elif command == 'size':
+    elif command == "size":
         print(len(stack))
         
-    elif command == 'empty':
+    elif command == "empty":
         if len(stack) == 0:
             print(1)
         else:
             print(0)
             
-    elif command == 'top':
+    elif command == "top":
         if len(stack) == 0:
             print(-1)
         else:
