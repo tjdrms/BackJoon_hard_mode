@@ -1,16 +1,13 @@
 import sys
-
 n = int(sys.stdin.readline())
-
 queue = []
-
 for _ in range(n):
     word = sys.stdin.readline().split()
+   
     command = word[0]
     
     if command == "push":
-        value = word[1]
-        queue.append(value)
+        queue.append(word[1])
         
     elif command == "pop":
         if len(queue) == 0:
