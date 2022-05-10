@@ -9,4 +9,4 @@ for i in range(n):
     answer.append(arr.pop(num))
     num += k-1
     
-print("<", ', '.join(str(i) for i in answer), ">", sep = '')
+print("<", ', '.join(str(i) for i in answer), ">", sep='')
